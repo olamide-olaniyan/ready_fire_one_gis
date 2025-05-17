@@ -1,0 +1,21 @@
+{
+  "name": "ready_fire_one",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gis.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "adm-zip": "^0.5.16",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.5.0",
+    "graceful-fs": "^4.2.11",
+    "https-proxy-agent": "^5.0.1",
+    "node-fetch": "^3.3.2"
+  },
+  "type": "module"
+}

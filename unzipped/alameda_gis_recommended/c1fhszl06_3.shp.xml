@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xml:lang="en">
+	<idinfo>
+		<citation>
+			<citeinfo>
+				<origin>CAL FIRE - FRAP</origin>
+				<pubdate>6/2008</pubdate>
+				<title>CAL FIRE final recommended VHFHSZs in LRA (c1fhszl06_3)</title>
+				<edition>06_3</edition>
+				<geoform Sync="TRUE">vector digital data</geoform>
+				<serinfo>
+					<sername>Draft</sername>
+				</serinfo>
+				<othercit>The user will cite the California Department of Forestry and Fire Protection as the original source of the data, but will clearly denote cases where the original data have been altered, updated, or in any way changed from the original condition.</othercit>
+				<onlink>PUBLIC: http://frap.cdf.ca.gov/data/frapgisdata/select.aspx</onlink>
+				<onlink>CAL FIRE: http://fphqfp/fpweb/CDFStaticDataDownloads.aspx</onlink>
+				<ftname Sync="TRUE">c1fhszl06_3</ftname>
+			</citeinfo>
+		</citation>
+		<descript>
+			<abstract>
+Government Code 51175-89 directs the California Department of Forestry and Fire Protection (CAL FIRE) to identify areas of very high fire hazard severity zones within Local Responsibility Areas (LRA).  Mapping of the areas, referred to as Very High Fire Hazard Severity Zones (VHFHSZ), is based on data and models of, potential fuels over a 30-50 year time horizon and their associated expected fire behavior, and expected burn probabilities to quantify the likelihood and nature of vegetation fire exposure (including firebrands) to buildings.  Details on the project and specific modeling methodology can be found at http://frap.cdf.ca.gov/projects/hazard/methods.html.  Local Responsibility Area VHFHSZ maps were initially developed in the mid-1990s and are now being updated based on improved science, mapping techniques, and data.
+
+This specific geographic information system dataset depicts final CAL FIRE recommendations for Very High FHSZs within the local jurisdiction.  The process of finalizing these boundaries involved an extensive local review process, the details of which are available at http://frap.cdf.ca.gov/projects/hazard/btnet/   (click on "Continue as guest without logging in"). Local government has 120 days to designate, by ordinance, very high fire hazard severity zones within its jurisdiction after receiving the recommendation.  Local government can add additional VHFHSZs.  There is no requirement for local government to report their final action to CAL FIRE when the recommended zones are adopted.  Consequently, users are directed to the appropriate local entity (county, city, fire department, or Fire Protection District) to determine the status of the local fire hazard severity zone ordinance.
+
+To display the areas of VHFHSZ recommended by CAL FIRE, simply display on the attribute HAZ_CLASS, as that has been filtered to represent only areas in the Very High Class, and only for areas that are in Local Responsibility Area (LRA) status.
+</abstract>
+			<purpose>In late 2005 to be effective in 2008, the California Building Commission adopted California Building Code Chapter 7A requiring new buildings in VH FHSZs to use ignition resistant construction methods and materials.  These new codes include provisions to improve the ignition resistance of buildings, especially from firebrands.  The updated very high fire hazard severity zones will be used by building officials for new building permits in LRA. The updated zones will also be used to identify property whose owners must comply with natural hazards disclosure requirements at time of property sale and 100 foot defensible space clearance. It is likely that the fire hazard severity zones will be used for updates to the safety element of general plans.</purpose>
+			<supplinf>
+fhszl06_3 Notes: this version is the result of hundreds of comments from local agencies. These comments often resulted in changes to our incorporated cities and/or SRA data layers. The end result was release of new versions of these data as well, sra05_5 and incorp07_3.
+
+fhszl06_1 Notes:
+
+Developed using sra05_4, incorp07_2.
+
+Known problems: an annexation to the city of Brea in Orange County 9/2006 was not captured as an LRA area and is designated as SRA in this dataset.
+</supplinf>
+			<langdata Sync="TRUE">en</langdata>
+		</descript>
+		<timeperd>
+			<timeinfo>
+				<sngdate>
+					<caldate>2006</caldate>
+				</sngdate>
+			</timeinfo>
+			<current>ground condition</current>
+		</timeperd>
+		<status>
+			<progress>Complete</progress>
+			<update>As needed</update>
+		</status>
+		<spdom>
+			<bounding>
+				<westbc Sync="TRUE">-122.473021</westbc>
+				<eastbc Sync="TRUE">-121.318370</eastbc>
+				<northbc Sync="TRUE">41.167489</northbc>
+				<southbc Sync="TRUE">40.371088</southbc>
+			</bounding>
+			<lboundng>
+				<leftbc Sync="TRUE">-207726.254900</leftbc>
+				<rightbc Sync="TRUE">-111924.324700</rightbc>
+				<topbc Sync="TRUE">350876.113600</topbc>
+				<bottombc Sync="TRUE">264356.218800</bottombc>
+			</lboundng>
+		</spdom>
+		<keywords>
+			<theme>
+				<themekey>LRA</themekey>
+				<themekey>fire hazard</themekey>
+				<themekey>wildfire</themekey>
+				<themekey>Local Responsibility Area</themekey>
+				<themekey>fire protection</themekey>
+			</theme>
+			<place>
+				<placekey>California</placekey>
+			</place>
+		</keywords>
+		<accconst>Public data - no constraints</accconst>
+		<useconst>This dataset DOES NOT define final adopted Very High zones in LRA - users are directed to contact the appropriate local jurisdiction to determine the actual current status of the local ordinance.</useconst>
+		<ptcontac>
+			<cntinfo>
+				<cntperp>
+					<cntper>FRAP Fire and Fuels Specialist</cntper>
+					<cntorg>California Department of Forestry and Fire Protection, Fire and Resource Assessment Program (CALFIRE - FRAP)</cntorg>
+				</cntperp>
+				<cntpos>FRAP Fire and Fuels Specialist</cntpos>
+				<cntaddr>
+					<addrtype>physical address</addrtype>
+					<address>1300 U St.</address>
+					<city>Sacramento</city>
+					<state>CA</state>
+					<postal>95818</postal>
+					<country>USA</country>
+				</cntaddr>
+				<cntvoice>916-327-3939</cntvoice>
+				<cntfax>916-324-1180</cntfax>
+				<cntemail>FRAPdatacontact@fire.ca.gov</cntemail>
+				<hours>M-F 8 -5</hours>
+			</cntinfo>
+		</ptcontac>
+		<browse>
+			<browsen>http://frap.cdf.ca.gov/data/browsegraphic/fhsz_map.png</browsen>
+			<browset>PNG</browset>
+		</browse>
+		<datacred>CAL FIRE recoginzes the important contribution of various local government entities that contributed data, maps, and comments that were critical components of the FHSZ mapping process.</datacred>
+		<secinfo></secinfo>
+		<native Sync="TRUE">Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 3; ESRI ArcCatalog 9.2.5.1450</native>
+		<natvform Sync="TRUE">Shapefile</natvform>
+	</idinfo>
+	<dataqual>
+		<logic>
+Fuel conditions were derived from the "best available" vegetation data, which varies in quality across the state. At the extreme, FRAP is aware of a few counties where outdated vegetation data proved to be a significant challenge for generating a quality data product. The review and comment process is critical for improving the zoning in these counties.
+
+Some counties have small unincorporated LRA "islands" that for all practical purposes should be SRA. These are typically the result of land swaps or sales from federal agencies to private or state ownership. Prior to becoming SRA, these must go through the Board of Forestry SRA review process. In the interim, for FHSZ purposes they are handled just like other LRA lands.
+</logic>
+		<complete>CAL FIRE made every attempt to capture recent annexations. This included obtaining city boundaries from counties and/or cities, and capturing boundaries from general plan maps and other sources. Undoubtedly some annexations, particularly recent ones, were missed. As a result, these areas are not assigned an LRA zone recommendation by CAL FIRE. However, local jurisdictions can consider the SRA zone designations and develop their own LRA Very High zone designations for these areas.</complete>
+		<posacc>
+			<horizpa>
+				<horizpar>Where possible, zone lines were snapped to parcel boundaries. In several counties parcel data was either not completed or not available.</horizpar>
+			</horizpa>
+		</posacc>
+		<lineage>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin></origin>
+						<pubdate></pubdate>
+						<edition></edition>
+					</citeinfo>
+				</srccite>
+				<srccontr>More information about data sources and methodology is provided at;  http://frap.cdf.ca.gov/projects/hazard/hazard.html</srccontr>
+			</srcinfo>
+			<attracc>
+				<attraccr></attraccr>
+			</attracc>
+			<procstep><procdesc Sync="TRUE">Metadata imported.</procdesc><srcused Sync="TRUE">c:\temp\xml2B.tmp</srcused><date Sync="TRUE">20080609</date><time Sync="TRUE">13301300</time></procstep><procstep><procdesc Sync="TRUE">Metadata imported.</procdesc><srcused Sync="TRUE">Q:\Projects\FHSZ\p2_final_review\c45fhszl06_3.shp.xml</srcused><date Sync="TRUE">20080828</date><time Sync="TRUE">09360800</time></procstep></lineage>
+	</dataqual>
+	<spdoinfo>
+		<direct Sync="TRUE">Vector</direct>
+		<ptvctinf>
+			<sdtsterm Name="c1fhszl06_3">
+				<sdtstype Sync="TRUE">G-polygon</sdtstype>
+				<ptvctcnt Sync="TRUE">0</ptvctcnt>
+			</sdtsterm>
+			<esriterm Name="c1fhszl06_3">
+				<efeatyp Sync="TRUE">Simple</efeatyp>
+				<esritopo Sync="TRUE">FALSE</esritopo>
+				<linrefer Sync="TRUE">FALSE</linrefer>
+				<spindex Sync="TRUE">FALSE</spindex>
+				<efeageom Sync="TRUE">Polygon</efeageom>
+				<efeacnt Sync="TRUE">0</efeacnt>
+			</esriterm>
+		</ptvctinf>
+	</spdoinfo>
+	<spref>
+		<horizsys>
+			<planar>
+				<planci>
+					<plance Sync="TRUE">coordinate pair</plance>
+					<coordrep>
+						<absres Sync="TRUE">0.000000</absres>
+						<ordres Sync="TRUE">0.000000</ordres>
+					</coordrep>
+					<plandu Sync="TRUE">meters</plandu>
+				</planci>
+				<mapproj><mapprojn Sync="TRUE">Albers Conical Equal Area</mapprojn><albers><stdparll Sync="TRUE">34.000000</stdparll><stdparll Sync="TRUE">40.500000</stdparll><longcm Sync="TRUE">-120.000000</longcm><latprjo Sync="TRUE">0.000000</latprjo><feast Sync="TRUE">0.000000</feast><fnorth Sync="TRUE">-4000000.000000</fnorth></albers></mapproj></planar>
+			<geodetic>
+				<horizdn Sync="TRUE">North American Datum of 1983</horizdn>
+				<ellips Sync="TRUE">Geodetic Reference System 80</ellips>
+				<semiaxis Sync="TRUE">6378137.000000</semiaxis>
+				<denflat Sync="TRUE">298.257222</denflat>
+			</geodetic>
+			<cordsysn>
+				<geogcsn Sync="TRUE">GCS_North_American_1983</geogcsn>
+				<projcsn Sync="TRUE">NAD_1983_California_Teale_Albers</projcsn>
+			</cordsysn>
+		</horizsys>
+		<vertdef>
+			<altsys>
+				<altres Sync="TRUE">0.000100</altres>
+				<altenc Sync="TRUE">Explicit elevation coordinate included with horizontal coordinates</altenc>
+			</altsys>
+		</vertdef>
+	</spref>
+	<eainfo>
+		<detailed Name="c1fhszl06_3">
+			<enttyp>
+				<enttypl>c1fhszl06_3</enttypl>
+				<enttypd>FHSZ polygons</enttypd>
+				<enttypc Sync="TRUE">0</enttypc>
+				<enttypt Sync="TRUE">Feature Class</enttypt>
+			</enttyp>
+			<attr>
+				<attrlabl Sync="TRUE">FID</attrlabl>
+				<attrdef>Internal feature number.</attrdef>
+				<attrdefs>ESRI</attrdefs>
+				<attrdomv>
+					<udom Sync="TRUE">Sequential unique whole numbers that are automatically generated.</udom>
+				</attrdomv>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attalias Sync="TRUE">FID</attalias>
+				<attrtype Sync="TRUE">OID</attrtype>
+				<attscale Sync="TRUE">0</attscale>
+				<attwidth Sync="TRUE">4</attwidth>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">Shape</attrlabl>
+				<attrdef>Feature geometry.</attrdef>
+				<attrdefs>ESRI</attrdefs>
+				<attrdomv>
+					<udom Sync="TRUE">Coordinates defining the features.</udom>
+				</attrdomv>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attalias Sync="TRUE">Shape</attalias>
+				<attrtype Sync="TRUE">Geometry</attrtype>
+				<attscale Sync="TRUE">0</attscale>
+				<attwidth Sync="TRUE">0</attwidth>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">SRA</attrlabl>
+				<attrdef>Designates polys for legal fire protection responsibility</attrdef>
+				<attrdomv>
+					<edom>
+						<edomvd>Federal Responsibility Area</edomvd>
+					</edom>
+					<edom>
+						<edomv>FRA</edomv>
+					</edom>
+					<edom>
+						<edomv>LRA</edomv>
+						<edomvd>Local Responsibility Area</edomvd>
+					</edom>
+					<edom>
+						<edomv>SRA</edomv>
+						<edomvd>State Responsibility Area</edomvd>
+					</edom>
+				</attrdomv>
+				<attalias Sync="TRUE">SRA</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">3</attwidth>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">INCORP</attrlabl>
+				<attrdef>Designates incorporated areas</attrdef>
+				<attrdomv>
+					<edom>
+						<edomvd>Blank (' ') indicates unincorporated area</edomvd>
+					</edom>
+					<edom>
+						<edomv>Y</edomv>
+						<edomvd>Incorporated area</edomvd>
+					</edom>
+				</attrdomv>
+				<attalias Sync="TRUE">INCORP</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">1</attwidth>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">HAZ_CODE</attrlabl>
+				<attrdef>FHSZ Numeric Code</attrdef>
+				<attrdomv>
+					<edom>
+						<edomv>1</edomv>
+						<edomvd>Moderate</edomvd>
+					</edom>
+					<edom>
+						<edomv>2</edomv>
+						<edomvd>High</edomvd>
+					</edom>
+					<edom>
+						<edomv>3</edomv>
+						<edomvd>Very High</edomvd>
+					</edom>
+					<edom>
+						<edomv>-2</edomv>
+						<edomvd>Non-wildland/non-urban</edomvd>
+					</edom>
+					<edom>
+						<edomv>-1</edomv>
+						<edomvd>Urban unzoned</edomvd>
+					</edom>
+				</attrdomv>
+				<attalias Sync="TRUE">HAZ_CODE</attalias>
+				<attrtype Sync="TRUE">Number</attrtype>
+				<attwidth Sync="TRUE">4</attwidth>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">HAZ_CLASS</attrlabl>
+				<attrdef>FHSZ Class Name</attrdef>
+				<attrdomv>
+					<edom>
+						<edomv>Moderate</edomv>
+						<edomvd>Moderate Hazard Class</edomvd>
+					</edom>
+					<edom>
+						<edomv>High</edomv>
+						<edomvd>High Hazard Class</edomvd>
+					</edom>
+					<edom>
+						<edomv>Very High</edomv>
+						<edomvd>Very High Hazard Class</edomvd>
+					</edom>
+					<edom>
+						<edomv>Non-wildland/non-urban</edomv>
+						<edomvd>e.g. water</edomvd>
+					</edom>
+					<edom>
+						<edomv>Urban unzoned</edomv>
+						<edomvd>Dense urban areas not assigned a zone</edomvd>
+					</edom>
+				</attrdomv>
+				<attalias Sync="TRUE">HAZ_CLASS</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">25</attwidth>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">Shape_Leng</attrlabl>
+				<atnumdec Sync="TRUE">11</atnumdec>
+				<attalias Sync="TRUE">Shape_Leng</attalias>
+				<attrtype Sync="TRUE">Float</attrtype>
+				<attwidth Sync="TRUE">19</attwidth>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">Shape_Area</attrlabl>
+				<attrdef>Area of feature in internal units squared.</attrdef>
+				<attrdefs>ESRI</attrdefs>
+				<attrdomv>
+					<udom Sync="TRUE">Positive real numbers that are automatically generated.</udom>
+				</attrdomv>
+				<atnumdec Sync="TRUE">11</atnumdec>
+				<attalias Sync="TRUE">Shape_Area</attalias>
+				<attrtype Sync="TRUE">Float</attrtype>
+				<attwidth Sync="TRUE">19</attwidth>
+			</attr>
+		</detailed>
+	</eainfo>
+	<distinfo>
+		<distrib>
+			<cntinfo>
+				<cntperp>
+					<cntper>FRAP Data Librarian</cntper>
+					<cntorg>CAL FIRE - FRAP</cntorg>
+				</cntperp>
+				<cntpos>FRAP Data Librarian</cntpos>
+				<cntaddr>
+					<addrtype>physical address</addrtype>
+					<address>1300 U St.</address>
+					<city>Sacramento</city>
+					<state>CA</state>
+					<postal>95818</postal>
+					<country>USA</country>
+				</cntaddr>
+				<cntvoice>916-327-3939</cntvoice>
+				<cntfax>916-324-1180</cntfax>
+				<cntemail>FRAPdatacontact@fire.ca.gov</cntemail>
+				<hours>M-F 8-5</hours>
+			</cntinfo>
+		</distrib>
+		<resdesc>fhszl06_3</resdesc>
+		<distliab>
+DISCLAIMER
+The State of California and the Department of Forestry and Fire Protection make no representations or warranties regarding the accuracy of data or maps.  The user will not seek to hold the State or the Department liable under any circumstances for any damages with respect to any claim by the user or any third party on account of or arising from the use of data or maps.
+There are no restrictions on distribution of the data by users. However, users are encouraged to refer others to the Department of Forestry and Fire Protection to acquire the data, in case updated data become available.
+</distliab>
+		<stdorder>
+			<digform>
+				<digtinfo>
+					<formname>ARCE</formname>
+					<formvern>ArcGIS 9.2</formvern>
+					<filedec>zip</filedec>
+					<transize>Small (1 - 10 MB)</transize>
+					<dssize>11.950</dssize>
+				</digtinfo>
+				<digtopt>
+					<onlinopt>
+						<oncomp>PUBLIC: http://frap.cdf.ca.gov/data/frapgisdata/select.aspx</oncomp>
+					</onlinopt>
+					<onlinopt>
+						<oncomp>CAL FIRE: http://fphqfp/fpweb/CDFStaticDataDownloads.aspx</oncomp>
+					</onlinopt>
+				</digtopt>
+			</digform>
+			<fees>none</fees>
+			<digtopt>
+				<onlinopt>
+					<computer>
+						<networka>
+							<networkr>http://frap.cdf.ca.gov/data/frapgisdata/select.aspx</networkr>
+							<networkr>http://fphqfp/fpweb/CDFStaticDataDownloads.aspx</networkr>
+						</networka>
+					</computer>
+				</onlinopt>
+			</digtopt>
+		</stdorder>
+		<custom>Not available</custom>
+	</distinfo>
+	<metainfo>
+		<metd Sync="TRUE">20080828</metd>
+		<metc>
+			<cntinfo>
+				<cntperp>
+					<cntper>FRAP Fire and Fuels Specialist</cntper>
+					<cntorg>CAL FIRE - FRAP</cntorg>
+				</cntperp>
+				<cntpos>FRAP Fire and Fuels Specialist</cntpos>
+				<cntaddr>
+					<addrtype>physical address</addrtype>
+					<address>1300 U St.</address>
+					<city>Sacramento</city>
+					<state>CA</state>
+					<postal>95818</postal>
+					<country>USA</country>
+				</cntaddr>
+				<cntvoice>916-327-3939</cntvoice>
+				<cntfax>916-324-1180</cntfax>
+				<cntemail>FRAPdatacontact@fire.ca.gov</cntemail>
+				<hours>M-F 8-5</hours>
+			</cntinfo>
+		</metc>
+		<metstdn Sync="TRUE">FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+		<metstdv Sync="TRUE">FGDC-STD-001-1998</metstdv>
+		<mettc Sync="TRUE">local time</mettc>
+		<metac>none</metac>
+		<metuc>none</metuc>
+		<metsi>
+			<metscs>Public Data</metscs>
+		</metsi>
+		<langmeta Sync="TRUE">en</langmeta>
+		<metextns><onlink Sync="TRUE">http://www.esri.com/metadata/esriprof80.html</onlink><metprof Sync="TRUE">ESRI Metadata Profile</metprof></metextns></metainfo>
+	<dataIdInfo>
+		<envirDesc Sync="TRUE">Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 3; ESRI ArcCatalog 9.2.5.1450</envirDesc>
+		<dataLang>
+			<languageCode Sync="TRUE" value="en"></languageCode>
+		</dataLang>
+		<geoBox esriExtentType="decdegrees">
+			<westBL Sync="TRUE">-122.473021</westBL>
+			<eastBL Sync="TRUE">-121.31837</eastBL>
+			<northBL Sync="TRUE">41.167489</northBL>
+			<southBL Sync="TRUE">40.371088</southBL>
+			<exTypeCode Sync="TRUE">1</exTypeCode>
+		</geoBox>
+		<idCitation>
+			<resTitle Sync="TRUE">c1fhszl06_3</resTitle>
+			<presForm>
+				<PresFormCd Sync="TRUE" value="005"></PresFormCd>
+			</presForm>
+		</idCitation>
+		<spatRpType>
+			<SpatRepTypCd Sync="TRUE" value="001"></SpatRepTypCd>
+		</spatRpType>
+		<dataExt>
+			<geoEle>
+				<GeoBndBox esriExtentType="native">
+					<westBL Sync="TRUE">-207726.2549</westBL>
+					<northBL Sync="TRUE">350876.1136</northBL>
+					<southBL Sync="TRUE">264356.2188</southBL>
+					<eastBL Sync="TRUE">-111924.3247</eastBL>
+					<exTypeCode Sync="TRUE">1</exTypeCode>
+				</GeoBndBox>
+			</geoEle>
+		</dataExt>
+	</dataIdInfo>
+	<distInfo>
+		<distributor>
+			<distorTran>
+				<onLineSrc>
+					<orDesc Sync="TRUE">002</orDesc>
+					<protocol Sync="TRUE">Local Area Network</protocol>
+					<linkage Sync="TRUE">file://\\fphqsan\frap\Projects\FHSZ\p2_final_review\c1fhszl06_3.shp</linkage>
+				</onLineSrc>
+				<transSize Sync="TRUE">0.000</transSize>
+			</distorTran>
+			<distorFormat>
+				<formatName Sync="TRUE">Shapefile</formatName>
+			</distorFormat>
+		</distributor>
+	</distInfo>
+	<Esri>
+		<CreaDate>20080828</CreaDate>
+		<ModDate>20080828</ModDate>
+		<ModTime>09371500</ModTime>
+		<SyncDate>20080828</SyncDate>
+		<SyncOnce>FALSE</SyncOnce>
+		<SyncTime>09371500</SyncTime>
+		<CreaTime>09360800</CreaTime>
+		<DataProperties>
+			<lineage>
+				<Process Name="Dissolve" ToolSource="C:\Program Files\ArcGIS\ArcToolbox\Toolboxes\Data Management Tools.tbx\Dissolve" Date="20070507" Time="125925">Dissolve Q:\Projects\FHSZ\draft\c10\update_dir2\c10fhsz_edit8\polygon c:\Temp\fhsz_edit_dissolve.shp fhsz_p1 # SINGLE_PART</Process>
+				<Process Name="Identity" ToolSource="C:\Program Files\ArcGIS\ArcToolbox\Toolboxes\Analysis Tools.tbx\Identity" Date="20070507" Time="125957">Identity c:\Temp\fhsz_edit_dissolve.shp Q:\projects\fhsz\Phase1_stage\sra\sra05_3_83\polygon c:\Temp\fhsz_dis_ident1.shp ALL "1 Meters" NO_RELATIONSHIPS</Process>
+				<Process Name="Multipart To Singlepart" ToolSource="C:\Program Files\ArcGIS\ArcToolbox\Toolboxes\Data Management Tools.tbx\MultipartToSinglepart" Date="20070507" Time="130101">MultipartToSinglepart c:\Temp\fhsz_dis_ident1.shp Q:\Projects\FHSZ\Phase1_stage\Fresno_fhsz_p1.mdb\c10fhsz_p1_ver2</Process>
+				<Process Name="Model9_5" ToolSource="Q:\Transfer\Mark\ArcGIS_tools\z_fhsz-4-12-07.tbx\Model9" Date="20070507" Time="130116">Model9 Q:\Projects\FHSZ\draft\c10\update_dir2\c10fhsz_edit8\polygon Q:\projects\fhsz\Phase1_stage\sra\sra05_3_83\polygon Q:\Projects\FHSZ\Phase1_stage\Fresno_fhsz_p1.mdb\c10fhsz_p1_ver2</Process>
+				<Process ToolSource="C:\Program Files\ArcGIS\ArcToolbox\Toolboxes\Data Management Tools.tbx\CopyFeatures" Date="20070626" Time="111124">CopyFeatures Q:\Projects\FHSZ\p1_final\Fresno_fhsz_p1.mdb\c10fhsz_p1 Q:\Transfer\Ron\FHSZ_Shapefiles\c10fhsz_p1.shp # 0 0 0</Process>
+				<Process Name="Dissolve_4" ToolSource="C:\ArcGIS\ArcToolbox\Toolboxes\Data Management Tools.tbx\Dissolve" Date="20070904" Time="133519">Dissolve Q:\Projects\FHSZ\draft\sra_working\a_fhsz07_working3.gdb\work_dir2\Xfhszs06_2 Q:\Projects\FHSZ\draft\sra_working\a_fhsz07_working3.gdb\work_dir2\Xfhszs06_2_SINGLE SRA;HAZ_CODE;HAZ_CLASS # SINGLE_PART</Process>
+				<Process Name="FeatureClassToFeatureClass_6" ToolSource="C:\ArcGIS\ArcToolbox\Toolboxes\Conversion Tools.tbx\FeatureClassToFeatureClass" Date="20070904" Time="144033">FeatureClassToFeatureClass Q:\Projects\FHSZ\draft\sra_working\a_fhsz07_working3.gdb\work_dir2\fhszs06_2 Q:\Projects\FHSZ\p1_final\Statewide fhszs06_2.shp # "SRA SRA true true false 3 Text 0 0 ,First,#,Q:\Projects\FHSZ\draft\sra_working\a_fhsz07_working3.gdb\work_dir2\fhszs06_2,SRA,-1,-1;HAZ_CODE HAZ_CODE true true false 2 Short 0 0 ,First,#,Q:\Projects\FHSZ\draft\sra_working\a_fhsz07_working3.gdb\work_dir2\fhszs06_2,HAZ_CODE,-1,-1;HAZ_CLASS HAZ_CLASS true true false 17 Text 0 0 ,First,#,Q:\Projects\FHSZ\draft\sra_working\a_fhsz07_working3.gdb\work_dir2\fhszs06_2,HAZ_CLASS,-1,-1;Shape_Leng Shape_Length false true true 8 Double 0 0 ,First,#,Q:\Projects\FHSZ\draft\sra_working\a_fhsz07_working3.gdb\work_dir2\fhszs06_2,Shape_Length,-1,-1;Shape_Area Shape_Area false true true 8 Double 0 0 ,First,#,Q:\Projects\FHSZ\draft\sra_working\a_fhsz07_working3.gdb\work_dir2\fhszs06_2,Shape_Area,-1,-1" # Q:\Projects\FHSZ\p1_final\Statewide\fhszs06_2.shp</Process>
+				<Process Name="Clip_5" ToolSource="C:\Program Files\ArcGIS\ArcToolbox\Toolboxes\Analysis Tools.tbx\Clip" Date="20070912" Time="164353">Clip fhszs06_2 DelNorte Q:\Transfer\Ron\FHSZSRAmaps\ClippedCountyData\fhszs06_28s.shp #</Process>
+				<Process Name="FeatureClassToFeatureClass_3" ToolSource="C:\ArcGIS\ArcToolbox\Toolboxes\Conversion Tools.tbx\FeatureClassToFeatureClass" Date="20080609" Time="133331">FeatureClassToFeatureClass q:\projects\fhsz\p2_draft\mr_review\c45LraVHFHSZ_5-15-08_edits.gdb\work_dir\c45fhszl06_3 q:\projects\fhsz\p2_final_review c45fhszl06_3.shp # "SRA SRA true true false 3 Text 0 0 ,First,#,q:\projects\fhsz\p2_draft\mr_review\c45LraVHFHSZ_5-15-08_edits.gdb\work_dir\c45fhszl06_3,SRA,-1,-1;INCORP INCORP true true false 1 Text 0 0 ,First,#,q:\projects\fhsz\p2_draft\mr_review\c45LraVHFHSZ_5-15-08_edits.gdb\work_dir\c45fhszl06_3,INCORP,-1,-1;HAZ_CODE HAZ_CODE true true false 2 Short 0 0 ,First,#,q:\projects\fhsz\p2_draft\mr_review\c45LraVHFHSZ_5-15-08_edits.gdb\work_dir\c45fhszl06_3,HAZ_CODE,-1,-1;HAZ_CLASS HAZ_CLASS true true false 25 Text 0 0 ,First,#,q:\projects\fhsz\p2_draft\mr_review\c45LraVHFHSZ_5-15-08_edits.gdb\work_dir\c45fhszl06_3,HAZ_CLASS,-1,-1;Shape_Leng Shape_Length false true true 8 Double 0 0 ,First,#,q:\projects\fhsz\p2_draft\mr_review\c45LraVHFHSZ_5-15-08_edits.gdb\work_dir\c45fhszl06_3,Shape_Length,-1,-1;Shape_Area Shape_Area false true true 8 Double 0 0 ,First,#,q:\projects\fhsz\p2_draft\mr_review\c45LraVHFHSZ_5-15-08_edits.gdb\work_dir\c45fhszl06_3,Shape_Area,-1,-1" # q:\projects\fhsz\p2_final_review\c45fhszl06_3.shp</Process><Process Name="FeatureClassToFeatureClass_3" ToolSource="C:\ArcGIS\ArcToolbox\Toolboxes\Conversion Tools.tbx\FeatureClassToFeatureClass" Date="20080828" Time="093717">FeatureClassToFeatureClass q:\projects\fhsz\p2_draft\c1LraVHFHSZ.gdb\work_dir\c1fhszl06_3 q:\Projects\FHSZ\p2_final_review c1fhszl06_3.shp # "SRA SRA true true false 3 Text 0 0 ,First,#,q:\projects\fhsz\p2_draft\c1LraVHFHSZ.gdb\work_dir\c1fhszl06_3,SRA,-1,-1;INCORP INCORP true true false 1 Text 0 0 ,First,#,q:\projects\fhsz\p2_draft\c1LraVHFHSZ.gdb\work_dir\c1fhszl06_3,INCORP,-1,-1;HAZ_CODE HAZ_CODE true true false 2 Short 0 0 ,First,#,q:\projects\fhsz\p2_draft\c1LraVHFHSZ.gdb\work_dir\c1fhszl06_3,HAZ_CODE,-1,-1;HAZ_CLASS HAZ_CLASS true true false 25 Text 0 0 ,First,#,q:\projects\fhsz\p2_draft\c1LraVHFHSZ.gdb\work_dir\c1fhszl06_3,HAZ_CLASS,-1,-1;Shape_Leng Shape_Length false true true 8 Double 0 0 ,First,#,q:\projects\fhsz\p2_draft\c1LraVHFHSZ.gdb\work_dir\c1fhszl06_3,Shape_Length,-1,-1;Shape_Area Shape_Area false true true 8 Double 0 0 ,First,#,q:\projects\fhsz\p2_draft\c1LraVHFHSZ.gdb\work_dir\c1fhszl06_3,Shape_Area,-1,-1" # q:\Projects\FHSZ\p2_final_review\c1fhszl06_3.shp</Process></lineage>
+		</DataProperties>
+		<MetaID>{33DE019E-0568-446E-8AC9-805B16E26A1D}</MetaID></Esri>
+	<mdChar>
+		<CharSetCd Sync="TRUE" value="004"></CharSetCd>
+	</mdChar>
+	<mdDateSt Sync="TRUE">20080828</mdDateSt>
+	<mdHrLv>
+		<ScopeCd Sync="TRUE" value="005"></ScopeCd>
+	</mdHrLv>
+	<mdHrLvName Sync="TRUE">dataset</mdHrLvName>
+	<mdLang>
+		<languageCode Sync="TRUE" value="en"></languageCode>
+	</mdLang>
+	<mdStanName Sync="TRUE">ISO 19115 Geographic Information - Metadata</mdStanName>
+	<mdStanVer Sync="TRUE">DIS_ESRI1.0</mdStanVer>
+	<refSysInfo>
+		<RefSystem>
+			<refSysID>
+				<identCode Sync="TRUE">NAD_1983_California_Teale_Albers</identCode>
+			</refSysID>
+		</RefSystem>
+	</refSysInfo>
+	<spatRepInfo>
+		<VectSpatRep>
+			<topLvl>
+				<TopoLevCd Sync="TRUE" value="001"></TopoLevCd>
+			</topLvl>
+			<geometObjs Name="c1fhszl06_3"><geoObjTyp><GeoObjTypCd Sync="TRUE" value="001"></GeoObjTypCd></geoObjTyp><geoObjCnt Sync="TRUE">0</geoObjCnt></geometObjs></VectSpatRep>
+	</spatRepInfo>
+</metadata>
