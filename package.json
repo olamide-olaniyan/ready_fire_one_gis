@@ -10,12 +10,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@supabase/supabase-js": "^2.53.0",
+    "@turf/turf": "^7.2.0",
     "adm-zip": "^0.5.16",
     "cheerio": "^1.0.0",
     "dotenv": "^16.5.0",
     "graceful-fs": "^4.2.11",
     "https-proxy-agent": "^5.0.1",
-    "node-fetch": "^3.3.2"
+    "node-fetch": "^3.3.2",
+    "proj4": "^2.19.10",
+    "shapefile": "^0.6.6"
   },
   "type": "module"
 }
