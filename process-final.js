@@ -29,26 +29,43 @@ function geometryToWKT(geom) {
 
     const { type, coordinates } = geom;
 
+    // Check for empty coordinates
+    if (!coordinates || coordinates.length === 0) {
+        return null;
+    }
+
     switch (type) {
         case 'Point':
+            if (coordinates.length !== 2) return null;
             return `POINT(${coordinates[0]} ${coordinates[1]})`;
 
         case 'Polygon':
+            if (!coordinates[0] || coordinates[0].length < 4) return null;
             const rings = coordinates.map(ring => {
+                if (!ring || ring.length < 4) return null;
                 const coords = ring.map(coord => `${coord[0]} ${coord[1]}`).join(', ');
                 return `(${coords})`;
-            }).join(', ');
-            return `POLYGON(${rings})`;
+            }).filter(ring => ring !== null);
+
+            if (rings.length === 0) return null;
+            return `POLYGON(${rings.join(', ')})`;
 
         case 'MultiPolygon':
+            if (!coordinates[0] || coordinates[0].length === 0) return null;
             const polygons = coordinates.map(polygon => {
+                if (!polygon || polygon.length === 0) return null;
                 const rings = polygon.map(ring => {
+                    if (!ring || ring.length < 4) return null;
                     const coords = ring.map(coord => `${coord[0]} ${coord[1]}`).join(', ');
                     return `(${coords})`;
-                }).join(', ');
-                return `(${rings})`;
-            }).join(', ');
-            return `MULTIPOLYGON(${polygons})`;
+                }).filter(ring => ring !== null);
+
+                if (rings.length === 0) return null;
+                return `(${rings.join(', ')})`;
+            }).filter(polygon => polygon !== null);
+
+            if (polygons.length === 0) return null;
+            return `MULTIPOLYGON(${polygons.join(', ')})`;
 
         default:
             console.warn(`⚠️ Unsupported geometry type: ${type}`);
@@ -81,10 +98,10 @@ async function processShapefile(shpPath, folderName) {
 
             const { geometry, properties } = feature;
 
-            // Convert geometry to WKT
+            // Convert geometry to WKT and validate
             const wktGeometry = geometryToWKT(geometry);
-            if (!wktGeometry) {
-                console.warn(`⚠️ Could not convert geometry for record ${recordCount}, skipping`);
+            if (!wktGeometry || wktGeometry.includes('()')) {
+                console.warn(`⚠️ Invalid or empty geometry for record ${recordCount}, skipping`);
                 continue;
             }
 
@@ -119,7 +136,7 @@ async function processShapefile(shpPath, folderName) {
 }
 
 /**
- * Insert records to Supabase in batches
+ * Insert records to Supabase in batches and populate geom column
  */
 async function insertToSupabase(records, chunkSize = 500) {
     console.log(`📤 Inserting ${records.length} records to Supabase...`);
@@ -132,7 +149,7 @@ async function insertToSupabase(records, chunkSize = 500) {
 
         try {
             const { data, error } = await supabase
-                .from('calfire_zone_risk_duplicate')
+                .from('calfire_zone_risk')
                 .insert(chunk);
 
             if (error) {
@@ -141,6 +158,10 @@ async function insertToSupabase(records, chunkSize = 500) {
             } else {
                 totalInserted += chunk.length;
                 console.log(`✅ Inserted chunk ${i + 1}-${i + chunk.length} (${totalInserted}/${records.length})`);
+
+                // Update geom column after successful insert
+                console.log(`🔄 Updating geom column for chunk ${i + 1}-${i + chunk.length}...`);
+                await updateGeomForChunk();
             }
         } catch (error) {
             console.error(`❌ Exception inserting chunk ${i + 1}-${i + chunk.length}:`, error.message);
@@ -155,6 +176,24 @@ async function insertToSupabase(records, chunkSize = 500) {
     console.log(`✅ Successfully inserted: ${totalInserted}`);
     console.log(`❌ Failed to insert: ${totalErrors}`);
     console.log(`📈 Success rate: ${((totalInserted / records.length) * 100).toFixed(1)}%`);
+}
+
+/**
+ * Update geom column for records that have geometry but no geom
+ */
+async function updateGeomForChunk() {
+    try {
+        // Use a simple SQL update that only processes valid geometries
+        const { data, error } = await supabase.rpc('update_geom_safe');
+
+        if (error) {
+            console.warn(`⚠️ Error updating geom column:`, error.message);
+        } else {
+            console.log(`✅ Geom column updated successfully`);
+        }
+    } catch (error) {
+        console.warn(`⚠️ Exception updating geom column:`, error.message);
+    }
 }
 
 /**
