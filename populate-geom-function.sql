@@ -2,13 +2,13 @@
 -- Run this in your Supabase SQL Editor
 
 -- First, alter the geom column to accept any geometry type
-ALTER TABLE public.calfire_zone_risk
+ALTER TABLE public.calfire_zone_risk_duplicate
 ALTER COLUMN geom TYPE GEOMETRY (GEOMETRY, 4326);
 
 CREATE OR REPLACE FUNCTION update_geom_safe()
 RETURNS void AS $$
 BEGIN
-    UPDATE public.calfire_zone_risk 
+    UPDATE public.calfire_zone_risk_duplicate 
     SET geom = (
         CASE 
             WHEN geometry IS NOT NULL 
@@ -30,7 +30,5 @@ END;
 $$ LANGUAGE plpgsql SECURITY DEFINER;
 
 -- Grant execute permission to the authenticated and anon roles
-GRANT
-EXECUTE ON FUNCTION populate_geom_from_wkt_batch () TO authenticated;
-
-GRANT EXECUTE ON FUNCTION populate_geom_from_wkt_batch () TO anon;
+GRANT EXECUTE ON FUNCTION update_geom_safe() TO authenticated;
+GRANT EXECUTE ON FUNCTION update_geom_safe() TO anon;

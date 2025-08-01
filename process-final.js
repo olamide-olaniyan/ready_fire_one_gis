@@ -149,7 +149,7 @@ async function insertToSupabase(records, chunkSize = 500) {
 
         try {
             const { data, error } = await supabase
-                .from('calfire_zone_risk')
+                .from('calfire_zone_risk_duplicate')
                 .insert(chunk);
 
             if (error) {
@@ -160,8 +160,8 @@ async function insertToSupabase(records, chunkSize = 500) {
                 console.log(`✅ Inserted chunk ${i + 1}-${i + chunk.length} (${totalInserted}/${records.length})`);
 
                 // Update geom column after successful insert
-                console.log(`🔄 Updating geom column for chunk ${i + 1}-${i + chunk.length}...`);
-                await updateGeomForChunk();
+                // console.log(`🔄 Updating geom column for chunk ${i + 1}-${i + chunk.length}...`);
+                // await updateGeomForChunk();
             }
         } catch (error) {
             console.error(`❌ Exception inserting chunk ${i + 1}-${i + chunk.length}:`, error.message);
